@@ -11,10 +11,6 @@ function pilihProduk(produk, harga) {
         "Rp" + harga.toLocaleString("id-ID");
 }
 
-document
-    .getElementById("checkoutButton")
-    .addEventListener("click", checkout);
-
 function checkout() {
     const username = document.getElementById("username").value;
 
