@@ -1,16 +1,19 @@
-console.log("RRR7 MARKET ROBUX");
 let produkDipilih = "";
 let hargaDipilih = 0;
 
-function pilihProduk(nama, harga) {
-    produkDipilih = nama;
+function pilihProduk(produk, harga) {
+    produkDipilih = produk;
     hargaDipilih = harga;
 
-    document.getElementById("produk").innerHTML = nama;
+    document.getElementById("produk").textContent = produk;
 
-    document.getElementById("harga").innerHTML =
+    document.getElementById("harga").textContent =
         "Rp" + harga.toLocaleString("id-ID");
 }
+
+document
+    .getElementById("checkoutButton")
+    .addEventListener("click", checkout);
 
 function checkout() {
     const username = document.getElementById("username").value;
@@ -21,21 +24,20 @@ function checkout() {
     }
 
     if (produkDipilih === "") {
-        alert("Pilih jumlah Robux.");
+        alert("Pilih produk terlebih dahulu.");
         return;
     }
 
     const nomorAdmin = "6287882922046";
 
-    const pesan =
-        "🛒 PESANAN BARU%0A%0A" +
-        "Toko: RRR7 MARKET ROBUX%0A" +
-        "Username Roblox: " + username + "%0A" +
-        "Produk: " + produkDipilih + "%0A" +
-        "Harga: Rp" + hargaDipilih.toLocaleString("id-ID");
-
-    window.open(
-        "https://wa.me/" + nomorAdmin + "?text=" + pesan,
-        "_blank"
+    const pesan = encodeURIComponent(
+        "RRR7 MARKET ROBUX\n\n" +
+        "Username: " + username + "\n" +
+        "Produk: " + produkDipilih + "\n" +
+        "Harga: Rp" +
+        hargaDipilih.toLocaleString("id-ID")
     );
+
+    window.location.href =
+        "https://wa.me/" + nomorAdmin + "?text=" + pesan;
 }
