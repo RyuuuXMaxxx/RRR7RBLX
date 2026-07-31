@@ -109,3 +109,15 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
+.payment-info {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f4f4f4;
+}
+
+.payment-info img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
