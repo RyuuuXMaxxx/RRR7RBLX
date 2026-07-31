@@ -54,3 +54,58 @@ button {
     background: #2563eb;
     cursor: pointer;
 }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+}
+
+header {
+    background: linear-gradient(180deg, #2563eb, #1d4ed8);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.logo-box img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
