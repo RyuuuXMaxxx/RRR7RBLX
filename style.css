@@ -97,3 +97,12 @@ button:hover {
     margin: auto;
     border-radius: 15px;
 }
+.banner {
+    background: white;
+    color: #2563eb;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+}
