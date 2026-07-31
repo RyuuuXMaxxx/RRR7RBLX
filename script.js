@@ -25,7 +25,7 @@ function checkout() {
         return;
     }
 
-    const nomorAdmin = "6281234567890";
+    const nomorAdmin = "6287882922046";
 
     const pesan =
         "🛒 PESANAN BARU%0A%0A" +
