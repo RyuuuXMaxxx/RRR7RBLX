@@ -1,67 +1,14 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6fb;
-}
-
-header {
-    background: #2563eb;
-    color: white;
-    padding: 25px;
-}
-
-.container {
-    padding: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-input,
-button {
-    width: 100%;
-    padding: 14px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
-button {
-    border: none;
-    cursor: pointer;
-}
-.payment-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #f4f6fb;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-    border: 1px solid #d9d9d9;
-}
-.buy-button {
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background: #2563eb;
-    cursor: pointer;
-}
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: #eef2ff;
+    background: #eef4ff;
+    color: #222;
 }
 
 header {
@@ -69,12 +16,17 @@ header {
     color: white;
     text-align: center;
     padding: 30px 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-.logo-box {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+header h1 {
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 8px;
+    opacity: 0.9;
 }
 
 .logo-box img {
@@ -89,35 +41,59 @@ header {
 
 .card {
     background: white;
-    border-radius: 15px;
+    border-radius: 18px;
     padding: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #2563eb;
     margin-bottom: 15px;
 }
 
 input {
     width: 100%;
     padding: 14px;
-    border-radius: 10px;
-    border: 1px solid #d1d5db;
+    border: 1px solid #d6d6d6;
+    border-radius: 12px;
+    outline: none;
 }
 
 button {
     width: 100%;
-    padding: 14px;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
+    padding: 14px;
     margin-top: 10px;
+    font-weight: bold;
     cursor: pointer;
-}
-.payment-info {
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 10px;
-    background: #f4f4f4;
+    color: white;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
 }
 
-.payment-info img {
+button:hover {
+    transform: scale(1.02);
+}
+
+.buy-button {
+    margin-top: 20px;
+}
+
+.payment-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background: #edf4ff;
+}
+
+.qris-image {
     width: 100%;
-    max-width: 250px;
-    border-radius: 10px;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
 }
